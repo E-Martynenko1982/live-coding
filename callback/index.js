@@ -5,15 +5,16 @@
  * */
 
 //map -input -callback output - array
-
-
+//filter not valid elements
+//if length > 0 => not valid
+// callback: input- el(num), index(op), array(op), out-elem(str)
+// 
 function getStatuses(results) {
-  //filter not valid elements
-  //if length > 0 => not valid
 
-  if (results.filter(el => el < 0 || el > 100).length > 0) {
-    return null
-  }
+
+  // if (results.filter(el => el < 0 || el > 100).length > 0) {
+  //   return null
+  // }
 
   if (results.some(el => el < 0 || el > 100)) {
     return null
@@ -37,5 +38,5 @@ console.log(getStatuses([1000, 450]));
 console.log(getStatuses([]));
 
 
-// --------------------------------Reduce
+
 
