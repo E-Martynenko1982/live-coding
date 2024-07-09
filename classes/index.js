@@ -1,5 +1,5 @@
-import { User } from "./user";
-import { Student } from "./student";
+import { User } from "./user.js";
+import { Student } from "./student.js";
 
 const user = new User(1, 'John', 'Doe');
 console.log(user.getFullName());
