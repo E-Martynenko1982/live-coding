@@ -1,6 +1,6 @@
 
 import { Student } from "./student.js";
-
+import { User } from "./user.js";
 const getTopStudent = students => {
 
   const { id, firstName, lastName } = students
