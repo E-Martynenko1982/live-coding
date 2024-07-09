@@ -1,12 +1,5 @@
-import { User } from "./user.js";
+
 import { Student } from "./student.js";
-
-const user = new User(1, 'John', 'Doe');
-console.log(user.getFullName());
-
-
-const student = new Student(1, "Jane", 'Doe', 'FE', 100)
-console.log(student.getFullName())
 
 const getTopStudent = students => {
 
