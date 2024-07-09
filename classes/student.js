@@ -9,7 +9,7 @@ export class Student extends User {
 
   }
   get getIsActive() {
-    this.#isActive
+    return this.#isActive
   }
 
   set setIsActive(value) {
