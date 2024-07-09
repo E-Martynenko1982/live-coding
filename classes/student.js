@@ -5,7 +5,7 @@ export class Student extends User {
   constructor(id, firstName, lastName, group, points) {
     super(id, firstName, lastName,)
     this.group = group;
-
+    this.points = points;
 
   }
   get getIsActive() {
