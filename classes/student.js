@@ -1,4 +1,4 @@
-import { User } from "./user.js ";
+import { User } from "./user ";
 
 export class Student extends User {
   #isActive = true;
