@@ -6,7 +6,7 @@ import { User } from "./user.js";
 const getTopStudent = students => {
 
   const { id, firstName, lastName } = students
-    .filter(student => student.getIsActive)
+    .filter(student => student.getIsActive())
     .reduce((topStudent, curstudent) => {
       if (curstudent.points > topStudent.points) {
         return curstudent
