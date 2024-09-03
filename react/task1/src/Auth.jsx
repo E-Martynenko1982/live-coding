@@ -35,9 +35,9 @@ class Auth extends React.Component {
     }
 
     return isLoggedIn ? (
-      <Logout handleLogout={this.handleLogout} /> // Передаєм handleLogout в компонент Logout
+      <Logout onLogout={this.handleLogout} /> // Передаєм handleLogout в компонент Logout
     ) : (
-      <Login handleLogin={this.handleLogin} /> // Передаєм handleLogin в компонент Login
+      <Login onLogin={this.handleLogin} /> // Передаєм handleLogin в компонент Login
     );
   }
 }
