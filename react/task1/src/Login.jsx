@@ -4,7 +4,6 @@ const Login = ({ handleLogin }) => {
   return (
     <button className='login btn' onClick={handleLogin}>
       Login
-
     </button>
   );
 }

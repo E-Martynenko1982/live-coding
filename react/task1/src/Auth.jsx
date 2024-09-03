@@ -27,17 +27,17 @@ class Auth extends React.Component {
   };
 
   render() {
-    console.log(this.state); // Логирование состояния для отладки
-    const { isSpinnerVisible, isLoggedIn } = this.state; // Деструктуризация state
+
+    const { isSpinnerVisible, isLoggedIn } = this.state; // Деструктуризація state
 
     if (isSpinnerVisible) {
-      return <Spinner size={25} />;
+      return <Spinner size={50} />;
     }
 
     return isLoggedIn ? (
-      <Logout handleLogout={this.handleLogout} /> // Передаем handleLogout в компонент Logout
+      <Logout handleLogout={this.handleLogout} /> // Передаєм handleLogout в компонент Logout
     ) : (
-      <Login handleLogin={this.handleLogin} /> // Передаем handleLogin в компонент Login
+      <Login handleLogin={this.handleLogin} /> // Передаєм handleLogin в компонент Login
     );
   }
 }
